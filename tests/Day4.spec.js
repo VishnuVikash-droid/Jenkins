@@ -8,6 +8,7 @@ test('Frames' , async ({page}) =>{
     const multiFrame=page.frameLocator('//iframe[@src="MultipleFrames.html"]')
     const frame = multiFrame.frameLocator('//iframe[@src="SingleFrame.html"]')
     await frame.locator('//input[@type="text"]').fill('Maanja')
+    await console.log("Task Completed");
 })
 
 
